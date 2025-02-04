@@ -5,7 +5,6 @@ pub fn process_input(input: &str) {
 
     if trimmed.is_empty() {
         println!("No input provided.");
-        println!("Test");
     } else if trimmed == "version" {
         println!("simple_app version: {}", VERSION);
     } else if trimmed.starts_with("panic") {
@@ -17,7 +16,7 @@ pub fn process_input(input: &str) {
                 return;
             }
         };
-        let array = [100, 200, 300];
+        let array = [100, 200, 300, 400];
         println!("Accessing array at index {}: {}", index, array[index]);
     } else if trimmed.starts_with("double") {
         let number_part = trimmed.trim_start_matches("double").trim();

@@ -5,7 +5,7 @@ pub fn process_input(input: &str) {
 
     if trimmed.is_empty() {
         println!("No input provided.");
-        println!("Test ");
+        println!("Test");
     } else if trimmed == "version" {
         println!("simple_app version: {}", VERSION);
     } else if trimmed.starts_with("panic") {

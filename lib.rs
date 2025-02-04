@@ -18,7 +18,17 @@ pub fn process_input(input: &str) {
         };
         let array = [100, 200, 300];
         println!("Accessing array at index {}: {}", index, array[index]);
+    } else if trimmed.starts_with("double") {
+        let number_part = trimmed.trim_start_matches("double").trim();
+        match double_number(number_part) {
+            Some(result) => println!("Doubled value: {}", result),
+            None => eprintln!("Invalid number provided after 'double': '{}'", number_part),
+        }
     } else {
         println!("Echo: {}", trimmed);
     }
+}
+
+fn double_number(input: &str) -> Option<i32> {
+    input.parse::<i32>().ok().map(|num| num * 2)
 }

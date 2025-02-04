@@ -13,7 +13,6 @@ fn main() {
 
     if args.iter().any(|arg| arg == "--help") {
         print_usage();
-        println!("return");
         return;
     }
 

@@ -5,7 +5,7 @@ pub fn process_input(input: &str) {
 
     if trimmed.is_empty() {
         println!("No input provided.");
-        println!("Testt");
+        println!("Test");
     } else if trimmed == "version" {
         println!("simple_app version: {}", VERSION);
     } else if trimmed.starts_with("panic") {
@@ -31,6 +31,6 @@ pub fn process_input(input: &str) {
 }
 
 fn double_number(input: &str) -> Option<i32> {
-    println!("Testt");
+    println!("Test");
     input.parse::<i32>().ok().map(|num| num * 2)
 }

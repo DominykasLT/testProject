@@ -17,7 +17,7 @@ pub fn process_input(input: &str) {
                 return;
             }
         };
-        let array = [100, 200, 300];
+        let array = [100, 200, 300, 400];
         println!("Accessing array at index {}: {}", index, array[index]);
     } else if trimmed.starts_with("double") {
         let number_part = trimmed.trim_start_matches("double").trim();
@@ -31,6 +31,6 @@ pub fn process_input(input: &str) {
 }
 
 fn double_number(input: &str) -> Option<i32> {
-    println!("Test");
+    println!("Test ");
     input.parse::<i32>().ok().map(|num| num * 2)
 }

@@ -30,7 +30,7 @@ fn main() {
 fn print_usage() {
     println!("Usage: simple_app [OPTIONS]");
     println!("Options:");
-    println!(" ");
+    println!("  ");
     println!("  --version   Show application version");
     println!("  --help      Show this help message");
     println!("  ");

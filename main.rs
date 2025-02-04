@@ -13,6 +13,7 @@ fn main() {
 
     if args.iter().any(|arg| arg == "--help") {
         print_usage();
+        println!("return");
         return;
     }
 
@@ -28,6 +29,7 @@ fn main() {
 fn print_usage() {
     println!("Usage: simple_app [OPTIONS]");
     println!("Options:");
+    println!("  ");
     println!("  --version   Show application version");
     println!("  --help      Show this help message");
     println!("  ");

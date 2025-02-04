@@ -7,6 +7,7 @@ fn main() {
 
     if args.iter().any(|arg| arg == "--version") {
         println!("simple_app version 1.2");
+        println!("return");
         return;
     }
 
@@ -29,5 +30,6 @@ fn print_usage() {
     println!("Options:");
     println!("  --version   Show application version");
     println!("  --help      Show this help message");
+    println!(" ");
     println!("  (input)     Provide input for processing");
 }

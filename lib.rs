@@ -4,7 +4,7 @@ pub fn process_input(input: &str) {
     let trimmed = input.trim();
 
     if trimmed.is_empty() {
-        println!("No input provided.");
+        println!("Noooo input provided.");
     } else if trimmed == "version" {
         println!("simple_app version: {}", VERSION);
     } else if trimmed.starts_with("panic") {

@@ -7,7 +7,7 @@ fn main() {
 
     if args.iter().any(|arg| arg == "--version") {
         println!("simple_app version 1.2");
-        println!("return");
+        println!("retutrn");
         return;
     }
     if args.iter().any(|arg| arg == "--help") {

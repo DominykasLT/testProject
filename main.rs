@@ -6,7 +6,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     if args.iter().any(|arg| arg == "--version") {
-        println!("simple_app version 1.2");
+        println!("simple_app version 1.20");
         println!("retutrn");
         return;
     }
